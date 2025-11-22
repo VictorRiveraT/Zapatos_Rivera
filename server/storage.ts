@@ -8,7 +8,6 @@ import {
   type AdminStats,
 } from "@shared/schema";
 import { randomUUID } from "crypto";
-import { productImages } from "./productImages";
 
 export interface IStorage {
   // Products
@@ -51,7 +50,7 @@ export class MemStorage implements IStorage {
         name: "Mocasín Clásico",
         price: "150.00",
         stock: 12,
-        image: productImages.loafers,
+        image: "https://images.unsplash.com/photo-1533867617858-e7b97e0605df?auto=format&fit=crop&q=80&w=800",
         category: "hombres",
       },
       {
@@ -59,7 +58,7 @@ export class MemStorage implements IStorage {
         name: "Botín Cuero Premium",
         price: "220.00",
         stock: 8,
-        image: productImages.boots,
+        image: "https://images.unsplash.com/photo-1608256246200-53e635b5b69f?auto=format&fit=crop&q=80&w=800",
         category: "mujeres",
       },
       {
@@ -67,7 +66,7 @@ export class MemStorage implements IStorage {
         name: "Zapato Formal Oxford",
         price: "180.00",
         stock: 15,
-        image: productImages.formal,
+        image: "https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&q=80&w=800",
         category: "hombres",
       },
       {
@@ -75,7 +74,7 @@ export class MemStorage implements IStorage {
         name: "Sandalia Artesanal",
         price: "95.00",
         stock: 4,
-        image: productImages.sandals,
+        image: "https://images.unsplash.com/photo-1603487742131-4160d6e243c6?auto=format&fit=crop&q=80&w=800",
         category: "accesorios",
       },
       {
@@ -83,7 +82,7 @@ export class MemStorage implements IStorage {
         name: "Chelsea Boot Castaño",
         price: "240.00",
         stock: 6,
-        image: productImages.chelsea,
+        image: "https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&q=80&w=800",
         category: "mujeres",
       },
       {
@@ -91,7 +90,7 @@ export class MemStorage implements IStorage {
         name: "Sneaker Casual Cuero",
         price: "165.00",
         stock: 10,
-        image: productImages.sneakers,
+        image: "https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&q=80&w=800",
         category: "hombres",
       },
     ];
