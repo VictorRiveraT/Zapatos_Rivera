@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { AdminStats } from "@/components/AdminStats";
 import { InventoryTable } from "@/components/InventoryTable";
+import { SalesChart } from "@/components/SalesChart";
 import { ArrowLeft } from "lucide-react";
 import type { Product, AdminStats as AdminStatsType } from "@shared/schema";
 import { useToast } from "@/hooks/use-toast";
@@ -74,6 +75,13 @@ export default function Admin() {
             stats={stats || { totalSales: 0, ordersPending: 0, lowStockAlerts: 0 }}
             isLoading={statsLoading}
           />
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6" data-testid="text-sales-chart-title">
+            Ventas de la Semana
+          </h2>
+          <SalesChart />
         </section>
 
         <section>

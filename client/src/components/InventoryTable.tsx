@@ -117,7 +117,14 @@ export function InventoryTable({ products, onUpdateStock, isLoading }: Inventory
                     data-testid={`input-stock-${product.id}`}
                   />
                 ) : (
-                  <span className="font-semibold" data-testid={`text-stock-${product.id}`}>
+                  <span
+                    className={`font-semibold ${
+                      parseInt(product.stock.toString()) < 5
+                        ? "text-destructive"
+                        : ""
+                    }`}
+                    data-testid={`text-stock-${product.id}`}
+                  >
                     {product.stock.toString()}
                   </span>
                 )}

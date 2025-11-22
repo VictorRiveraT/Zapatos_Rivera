@@ -8,8 +8,11 @@ import type { Product, CartItemWithProduct } from "@shared/schema";
 import { useToast } from "@/hooks/use-toast";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 
+type CategoryType = "hombres" | "mujeres" | "accesorios";
+
 export default function Home() {
   const [cartOpen, setCartOpen] = useState(false);
+  const [selectedCategories, setSelectedCategories] = useState<CategoryType[]>([]);
   const { toast } = useToast();
 
   // Fetch products
@@ -117,6 +120,21 @@ export default function Home() {
     }
   };
 
+  const toggleCategory = (category: CategoryType) => {
+    setSelectedCategories((prev) =>
+      prev.includes(category)
+        ? prev.filter((c) => c !== category)
+        : [...prev, category]
+    );
+  };
+
+  const filteredProducts =
+    selectedCategories.length === 0
+      ? products
+      : products.filter((p) =>
+          selectedCategories.includes((p.category as CategoryType) || "hombres")
+        );
+
   const addToCart = (product: Product) => {
     addToCartMutation.mutate(product);
   };
@@ -140,7 +158,9 @@ export default function Home() {
       <Navbar cartItemCount={cartItemCount} onCartClick={() => setCartOpen(true)} />
       <Hero onCatalogClick={scrollToCatalog} />
       <ProductCatalog
-        products={products}
+        products={filteredProducts}
+        selectedCategories={selectedCategories}
+        onCategoryToggle={toggleCategory}
         onAddToCart={addToCart}
         isLoading={productsLoading}
       />

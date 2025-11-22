@@ -52,6 +52,7 @@ export class MemStorage implements IStorage {
         price: "150.00",
         stock: 12,
         image: productImages.loafers,
+        category: "hombres",
       },
       {
         sku: "BOT-002",
@@ -59,6 +60,7 @@ export class MemStorage implements IStorage {
         price: "220.00",
         stock: 8,
         image: productImages.boots,
+        category: "mujeres",
       },
       {
         sku: "FOR-003",
@@ -66,6 +68,7 @@ export class MemStorage implements IStorage {
         price: "180.00",
         stock: 15,
         image: productImages.formal,
+        category: "hombres",
       },
       {
         sku: "SAN-004",
@@ -73,6 +76,7 @@ export class MemStorage implements IStorage {
         price: "95.00",
         stock: 4,
         image: productImages.sandals,
+        category: "accesorios",
       },
       {
         sku: "CHE-005",
@@ -80,6 +84,7 @@ export class MemStorage implements IStorage {
         price: "240.00",
         stock: 6,
         image: productImages.chelsea,
+        category: "mujeres",
       },
       {
         sku: "SNE-006",
@@ -87,6 +92,7 @@ export class MemStorage implements IStorage {
         price: "165.00",
         stock: 10,
         image: productImages.sneakers,
+        category: "hombres",
       },
     ];
 

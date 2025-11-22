@@ -156,6 +156,9 @@ export function CartDrawer({
                     S/ {total.toFixed(2)}
                   </span>
                 </div>
+                <div className="text-xs text-muted-foreground text-center py-2" data-testid="text-payment-methods">
+                  Aceptamos: Yape • Plin • Visa • Mastercard
+                </div>
                 <Button
                   className="w-full bg-accent hover:bg-accent text-accent-foreground"
                   size="lg"

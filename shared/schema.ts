@@ -10,6 +10,7 @@ export const products = pgTable("products", {
   price: decimal("price", { precision: 10, scale: 2 }).notNull(),
   stock: integer("stock").notNull().default(0),
   image: text("image").notNull(),
+  category: text("category").notNull().default("hombres"),
 });
 
 export const insertProductSchema = createInsertSchema(products).omit({
