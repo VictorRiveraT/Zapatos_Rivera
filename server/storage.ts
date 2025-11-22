@@ -50,7 +50,7 @@ export class MemStorage implements IStorage {
         name: "Mocasín Clásico",
         price: "150.00",
         stock: 12,
-        image: "https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80",
         category: "hombres",
       },
       {
@@ -66,7 +66,7 @@ export class MemStorage implements IStorage {
         name: "Zapato Formal Oxford",
         price: "180.00",
         stock: 15,
-        image: "https://images.unsplash.com/photo-1478186376094-1a98a8769315?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1607107121228-aa4a151e5ba4?auto=format&fit=crop&w=800&q=80",
         category: "hombres",
       },
       {
@@ -82,7 +82,7 @@ export class MemStorage implements IStorage {
         name: "Sneaker Casual Cuero",
         price: "165.00",
         stock: 20,
-        image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
         category: "unisex",
       },
     ];
