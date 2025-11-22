@@ -50,7 +50,7 @@ export class MemStorage implements IStorage {
         name: "Mocasín Clásico",
         price: "150.00",
         stock: 12,
-        image: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80",
+        image: "/generated_images/brown_leather_classic_loafers.png",
         category: "hombres",
       },
       {
@@ -58,7 +58,7 @@ export class MemStorage implements IStorage {
         name: "Botín Cuero Premium",
         price: "220.00",
         stock: 8,
-        image: "https://images.unsplash.com/photo-1608256246200-53e635b5b69f?auto=format&fit=crop&w=800&q=80",
+        image: "/generated_images/dark_leather_ankle_boots.png",
         category: "hombres",
       },
       {
@@ -66,7 +66,7 @@ export class MemStorage implements IStorage {
         name: "Zapato Formal Oxford",
         price: "180.00",
         stock: 15,
-        image: "https://images.unsplash.com/photo-1607107121228-aa4a151e5ba4?auto=format&fit=crop&w=800&q=80",
+        image: "/generated_images/black_formal_dress_shoes.png",
         category: "hombres",
       },
       {
@@ -74,7 +74,7 @@ export class MemStorage implements IStorage {
         name: "Sandalia Artesanal",
         price: "90.00",
         stock: 5,
-        image: "https://images.unsplash.com/photo-1603487742131-4160d6e243c6?auto=format&fit=crop&w=800&q=80",
+        image: "/generated_images/tan_artisanal_leather_sandals.png",
         category: "mujeres",
       },
       {
@@ -82,8 +82,16 @@ export class MemStorage implements IStorage {
         name: "Sneaker Casual Cuero",
         price: "165.00",
         stock: 20,
-        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+        image: "/generated_images/cognac_casual_leather_sneakers.png",
         category: "unisex",
+      },
+      {
+        sku: "CHE-006",
+        name: "Chelsea Boot Castaño",
+        price: "240.00",
+        stock: 10,
+        image: "/generated_images/chestnut_chelsea_boots.png",
+        category: "hombres",
       },
     ];
 
